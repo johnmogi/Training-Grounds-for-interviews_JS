@@ -1,5 +1,6 @@
 const breaker = document.createElement("br")
 const div = document.createElement("div")
+const div2 = document.createElement("div")
 
 const stage = document.getElementById("stage")
 const main = document.getElementById("main")
@@ -12,14 +13,14 @@ rotater.addEventListener("click", rotateMe)
 // arr[0] = [1, 2, 3];
 // arr[1] = [4, 5, 6];
 // arr[2] = [7, 8, 9];
-let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]]
 
 stage.append(matrix[0])
 stage.append(div)
 div.append(matrix[1])
-stage.append(matrix[2])
-
-//*got this excellent technique here: https://code.likeagirl.io/rotate-an-2d-matrix-90-degree-clockwise-without-create-another-array-49209ea8b6e6
+stage.append(div2)
+div2.append(matrix[2])
+stage.append(matrix[3])
 
 function rotate(matrix) {
     const n = matrix.length;
@@ -39,6 +40,7 @@ function init() {
     stage.innerHTML = ""
     main.innerHTML = ""
     div.innerHTML = ""
+    div2.innerHTML = ""
 }
 
 
@@ -48,5 +50,7 @@ function rotateMe() {
     stage.append(matrix[0])
     stage.append(div)
     div.append(matrix[1])
-    stage.append(matrix[2])
+    stage.append(div2)
+    div2.append(matrix[2])
+    stage.append(matrix[3])
 }
