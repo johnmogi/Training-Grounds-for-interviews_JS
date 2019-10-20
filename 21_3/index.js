@@ -1,3 +1,5 @@
+
+
 function pascalTriangle1(rowCount) {
     if (rowCount === 0) { return [] }
     if (rowCount === 1) { return [[1]] }
@@ -17,11 +19,11 @@ function pascalTriangle1(rowCount) {
 }
 console.log(pascalTriangle1(5))
 
+
 // TODO orange massage
 // ? blue
 // ! red
 // * green
-
 // grey out
 // // grey twice
 

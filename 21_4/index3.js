@@ -1,7 +1,5 @@
 var arr = [1, 2, 3, 4, 5, 6, 7]
 
-//* last time i used pop and 2 arrays, let's try slice into one array?
-
 let numberPop = prompt("number of times you'd like to rotate the array?")
 // let numberPop = 1
 
